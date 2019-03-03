@@ -1,15 +1,13 @@
 {
-  "useTabs": true,
-  "arrowParens": "always",
-  "overrides": [
-    {
-      "files": "*.md",
-      "options": {
-        "printWidth": 70,
-        "useTabs": false,
-        "trailingComma": "none",
-        "proseWrap": "never"
-      }
-    }
-  ]
+    "arrowParens": "always",
+    "overrides": [
+        {
+            "files": "*.md",
+            "options": {
+                "printWidth": 70,
+                "trailingComma": "none",
+                "proseWrap": "never"
+            }
+        }
+    ]
 }
