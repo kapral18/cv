@@ -5,7 +5,11 @@
         "url": "https://www.catawiki.com",
         "description": "Europe's fastest growing online auction house",
         "date": "02/2019 - now",
-        "achievements": [],
+        "achievements": [
+            "Helped roll out mobile-first version of auction lot details page",
+            "Improved build tools",
+            "Improved front-end architecture"
+        ],
         "stack": [
             "JavaScript",
             "TypeScript",
@@ -19,7 +23,12 @@
             "BEM",
             "Express",
             "Babel",
-            "ESLint"
+            "TSLint",
+            "ESLint",
+            "PhoenixCSS",
+            "Docker",
+            "Ansible",
+            "Shell"
         ]
     },
     {
