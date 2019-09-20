@@ -2,6 +2,7 @@
     "name": "cv",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://kapral18.github.io/cv/",
     "dependencies": {
         "@babel/core": "7.6.0",
         "@babel/node": "^7.6.1",
@@ -66,11 +67,13 @@
     },
     "scripts": {
         "start": "node scripts/start.js",
-        "build": "node scripts/build.js && rimraf docs && mv build docs && touch docs/.nojekyll",
+        "build": "node scripts/build.js",
         "test": "node scripts/test.js",
         "pdf": "BABEL_ENV=pdf babel-node src/CV.js",
         "posttest": "npm run format",
-        "format": "prettier --write \"**/*.{js,css,md}\""
+        "format": "prettier --write \"**/*.{js,css,md}\"",
+        "predeploy": "yarn build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -166,6 +169,7 @@
         }
     },
     "devDependencies": {
+        "gh-pages": "2.1.1",
         "prettier": "^1.18.2"
     }
 }
