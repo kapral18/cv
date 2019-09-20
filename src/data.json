@@ -1,10 +1,41 @@
 [
     {
+        "position": "Contract Senior Front-end Engineer",
+        "company": "LeasePlan",
+        "url": "https://www.leaseplan.com",
+        "description": "One of the world's leading leasing companies, with 1.7 million vehicles in over 30 countries.",
+        "date": "08/2019 - present",
+        "achievements": ["Improved front-end architecture"],
+        "stack": [
+            "TypeScript",
+            "React",
+            "ReduxSaga",
+            "SitecoreJSS",
+            "ES6",
+            "ES7",
+            "ES8",
+            "HTML5",
+            "SCSS",
+            "StyledComponents",
+            "Webpack",
+            "Node",
+            "BEM",
+            "Express",
+            "Babel",
+            "TSlint",
+            "ESLint",
+            "Docker",
+            "Jest",
+            "Wallaby",
+            "ReduxSagaTestPlan"
+        ]
+    },
+    {
         "position": "Senior Front-end Engineer",
         "company": "Catawiki",
         "url": "https://www.catawiki.com",
         "description": "Europe's fastest growing online auction house",
-        "date": "02/2019 - now",
+        "date": "02/2019 - 07/2019",
         "achievements": [
             "Helped roll out mobile-first version of auction lot details page",
             "Improved build tools",
