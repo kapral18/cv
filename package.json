@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-pdf/renderer": "^2.0.15",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -10,9 +11,11 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "ts-node": "^10.0.0",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
@@ -20,7 +23,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "posttest": "yarn format",
+    "eject": "react-scripts eject",
+    "pdf": "ts-node --project tsconfig.node.json src/components/CV.tsx",
+    "format": "prettier --loglevel warn --write \"**/*.{ts,tsx,css,md}\"",
+    "predeploy": "yarn pdf",
+    "deploy": "gh-pages -d cv",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +48,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "prettier": ">=2"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,css,md}": "yarn format"
   }
 }
