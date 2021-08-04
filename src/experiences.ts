@@ -9,8 +9,10 @@ export const experiences: TExperience[] = [
             "One of the world's leading leasing companies, with 1.7 million vehicles in over 30 countries.",
         date: "08/2019 - present",
         achievements: [
+            "As part of frontend ops and quality team helped devise and orchestrate move from monolith to microfrontends",
+            "Contributed to holistic performance audit and improvement of leaseplan.com",
             "Took ownership, coordinated and delivered a valuable MVP business solution with very tight deadlines for fleet management of LP France",
-            "fully revamped and scaled integration of in-house generic sitecore form-library solution",
+            "Fully revamped and scaled integration of in-house generic sitecore form-library solution",
             "Improved build tools",
             "Improved front-end architecture",
             "Helped release in-house SiteCoreCMS form library",
