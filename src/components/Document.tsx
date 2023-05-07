@@ -22,7 +22,7 @@ const Resume: FC = () => (
 const Document: FC = () => (
     <PDFDocument
         author="Karen Grigoryan"
-        keywords="awesome, javascript, cv, front-end developer, react, typescript"
+        keywords="awesome, javascript, cv, full-stack developer, react, typescript, node, express"
         subject="The CV of Karen Grigoryan"
         title="CV"
     >

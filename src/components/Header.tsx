@@ -43,7 +43,7 @@ const Header: FC = () => (
         <View style={styles.detailColumn}>
             <Text style={styles.name}>Karen Grigoryan</Text>
             <Text style={styles.subtitle}>Senior Front-end Engineer</Text>
-            <Text style={styles.location}>Zaandam, The Netherlands</Text>
+            <Text style={styles.location}>Zaanstad, The Netherlands</Text>
             <Text style={styles.email}>hey@karenjs.com</Text>
         </View>
         <View>
