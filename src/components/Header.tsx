@@ -42,7 +42,7 @@ const Header: FC = () => (
     <View style={styles.container}>
         <View style={styles.detailColumn}>
             <Text style={styles.name}>Karen Grigoryan</Text>
-            <Text style={styles.subtitle}>Senior Front-end Engineer</Text>
+            <Text style={styles.subtitle}>Full Stack Javascript Developer</Text>
             <Text style={styles.location}>Zaanstad, The Netherlands</Text>
             <Text style={styles.email}>hey@karenjs.com</Text>
         </View>
