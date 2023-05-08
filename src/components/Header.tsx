@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
     },
     email: {
         fontSize: 9,
-        textDecoration: "underline",
         color: "blue",
     },
     rightLink: {

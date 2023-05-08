@@ -35,6 +35,7 @@ const Experience: FC<{ experience: TExperience }> = ({ experience }) => {
                     <Link
                         style={{
                             fontSize: 11,
+                            color: "blue",
                         }}
                         src={experience.url}
                     >

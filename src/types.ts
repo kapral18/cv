@@ -7,3 +7,11 @@ export type TExperience = {
     achievements: string[];
     stack: string[];
 };
+
+export type TCertification = {
+    name: string;
+    company: string;
+    issueDate: string;
+    id: string;
+    url: string;
+};

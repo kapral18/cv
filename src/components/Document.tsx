@@ -4,6 +4,7 @@ import { Document as PDFDocument, Page } from "@react-pdf/renderer";
 import Header from "./Header";
 import Education from "./Education";
 import Experiences from "./Experiences";
+import Certifications from "./Certifications";
 
 const Resume: FC = () => (
     <Page
@@ -15,6 +16,7 @@ const Resume: FC = () => (
     >
         <Header />
         <Experiences />
+        <Certifications />
         <Education />
     </Page>
 );

@@ -103,7 +103,7 @@ export const experiences: TExperience[] = [
     {
         position: "Senior Frontend Developer",
         company: "IPsoft",
-        url: "https://www.ipsoft.com",
+        url: "https://amelia.ai/aiops/",
         description:
             "Enterprise-scale autonomic and cognitive solutions platform, in use by 1 in 10 Fortune 1000 companies",
         date: "09/2017 - 11/2018",
