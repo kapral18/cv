@@ -1,60 +1,45 @@
 {
-  "name": "cv-ts",
-  "version": "0.1.0",
+  "name": "cv-vite",
   "private": true,
-  "dependencies": {
-    "@react-pdf/renderer": "^2.0.18",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^12.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^26.0.24",
-    "@types/node": "^16.4.11",
-    "@types/react": "^17.0.15",
-    "@types/react-dom": "^17.0.9",
-    "gh-pages": "^3.2.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "ts-node": "^10.1.0",
-    "typescript": "^4.3.5",
-    "web-vitals": "^2.1.0"
-  },
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "posttest": "yarn format",
-    "eject": "react-scripts eject",
-    "pdf": "ts-node --project tsconfig.node.json src/components/CV.tsx",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "pdf": "vite-node src/cv-gen/CV.tsx",
     "format": "prettier --loglevel warn --write \"**/*.{ts,tsx,css,md}\"",
     "predeploy": "yarn pdf",
     "deploy": "gh-pages -d cv",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "posttest": "npm run format"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@react-pdf/renderer": "^3.1.14",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "husky": ">=7.0.1",
-    "lint-staged": ">=11.1.1",
-    "prettier": ">=2"
+    "@types/node": "^20.10.1",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "gh-pages": "^6.1.0",
+    "husky": ">=7",
+    "lint-staged": ">=10",
+    "prettier": ">=2",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vite-node": "^0.34.6"
   },
   "lint-staged": {
-    "*.{ts,tsx,css,md}": "yarn format"
+    "*.{ts,tsx,css,md}": "yarn format",
+    "*.{ts,tsx}": "eslint --cache --fix"
   }
 }

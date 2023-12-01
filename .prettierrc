@@ -1,5 +1,4 @@
 {
-  "tabWidth": 4,
   "overrides": [
     {
       "files": "*.md",
@@ -8,11 +7,6 @@
         "trailingComma": "none",
         "arrowParens": "avoid",
         "proseWrap": "never"
-      }
-    },
-    {
-      "files": "*.{json,babelrc,eslintrc,remarkrc,prettierrc}",
-      "options": {
       }
     }
   ]
